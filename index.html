@@ -4,9 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>RPS</title>
 </head>
 <body>
-<script src="rps.js"></script>
+  <main>
+    <h1 class="title">ROCK PAPER SCISSORS</h1>
+    <h2 class="letsplay">LETS PLAY</h2>
+    <h3 class="welcome-msg">Welcome Player <span class="player-num"></span>. CHOOSE YOUR WEAPON </h3>
+    <p class="rules">First to 5 wins...</p>
+    <div class="options">
+        <div class="rock">
+            <img class="playerChoice" src="images/rock.svg" alt="rock button">
+            <p>Rock</p>
+        </div>
+        <div class="paper">
+            <img class="playerChoice" src="images/paper.svg" alt="paper button">
+            <p>Paper</p>
+        </div>
+        <div class="scissors">
+            <img class="playerChoice" src="images/scissors.svg" alt="scissors button">
+            <p>Scissors</p>
+        </div>
+        <button class="reset-game hide">Play Again!</button>
+    </div>
+    <div class="score">
+        <div>
+            <h2>Player <span class="player-num"></span></h2>
+            <h2 id="playerScore">0</h2>
+        </div>
+        <div>
+            <h2>Computer</h2>
+            <h2 id="computerScore">0</h2>
+        </div>
+    </div>
+    <div class="status">
+        <p class="update"></p>
+        <p class="gameover-update hide"></p>
+    </div>
+</main>
+    
+<script src="app.js"></script>
 </body>
 </html>
